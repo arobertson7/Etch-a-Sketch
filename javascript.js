@@ -39,7 +39,7 @@ resetButton.addEventListener("click", () => {
     }
 })
 
-const changeSquaresButton = document.querySelector(".change-squares");
+const changeSquaresButton = document.querySelector(".change-grid-size");
 
 changeSquaresButton.addEventListener("click", () => {
     //Nodelist for all squares

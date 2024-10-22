@@ -24,7 +24,6 @@ body {
 
 .squares {
     background-color: white;
-    
 }
 
 
@@ -32,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 740px;
     width: 365px;
 }
@@ -40,14 +40,15 @@ body {
     height: 740px;
     width: 365px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.reset-button {
-
+.change-grid-size, .reset-button {
+    height: 40px;
+    width: 110px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(62, 61, 61);
 }
-
-/*x is user number
-
-740 / x
