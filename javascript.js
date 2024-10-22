@@ -17,10 +17,19 @@ function createSquares(numOfSquares)
         square.style.width = squareLength.toString() + "px";
         //Add hovering effect
         square.addEventListener("mouseover", () => {
-            // square.style.backgroundColor = "rgb(171, 217, 230)";
             square.style.opacity -= 0.2;
+            
+            /* Makes squares colorful
+            square.style.backgroundColor = getRandomRGB();
+            */
         })
     }
+}
+
+//Returns random color in rgb string format, for example returns: "rgb(203, 43, 74)"
+function getRandomRGB() {
+    return "rgb(" + (Math.floor(Math.random() * 255)).toString() + ", " + (Math.floor(Math.random() * 255)).toString() + ", " +
+    (Math.floor(Math.random() * 255)).toString() + ")";
 }
 
 //start with 16x16 grid
@@ -55,6 +64,8 @@ changeSquaresButton.addEventListener("click", () => {
         squaresContainer.removeChild(squares[i]);
     }
     createSquares(numSquares);
+    const gridSizeDisplay = document.querySelector(".grid-size-display");
+    gridSizeDisplay.textContent = "Current Size: " + numSquares + " x " + numSquares;
 })
 
 //remove original grid
