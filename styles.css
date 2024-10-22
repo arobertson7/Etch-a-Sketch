@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(171, 217, 230);
+}
+
+.squares-container {
+    height: 740px;
+    width: 740px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.squares {
+    background-color: white;
+    
+}
+
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 740px;
+    width: 365px;
+}
+
+.right-side {
+    height: 740px;
+    width: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-button {
+
+}
+
+/*x is user number
+
+740 / x
